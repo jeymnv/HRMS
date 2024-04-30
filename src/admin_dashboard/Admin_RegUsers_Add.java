@@ -133,7 +133,6 @@ public class Admin_RegUsers_Add extends javax.swing.JFrame {
         jToggleButton2 = new javax.swing.JToggleButton();
         mainDk = new javax.swing.JDesktopPane();
         jPanel2 = new javax.swing.JPanel();
-        add = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         fn = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
@@ -154,6 +153,7 @@ public class Admin_RegUsers_Add extends javax.swing.JFrame {
         jLabel16 = new javax.swing.JLabel();
         cancel = new javax.swing.JButton();
         update = new javax.swing.JButton();
+        add = new javax.swing.JButton();
         edit = new javax.swing.JButton();
         adm_header = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
@@ -168,7 +168,7 @@ public class Admin_RegUsers_Add extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(null);
 
-        adm_nav.setBackground(new java.awt.Color(153, 153, 153));
+        adm_nav.setBackground(new java.awt.Color(204, 204, 204));
         adm_nav.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(235, 235, 235), 2));
         adm_nav.setForeground(new java.awt.Color(153, 153, 153));
 
@@ -188,7 +188,7 @@ public class Admin_RegUsers_Add extends javax.swing.JFrame {
         });
 
         jLabel3.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel3.setFont(new java.awt.Font("Yu Gothic UI", 0, 14)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(27, 55, 77));
         jLabel3.setText(" Dashboard");
         jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -230,7 +230,7 @@ public class Admin_RegUsers_Add extends javax.swing.JFrame {
         });
 
         jLabel5.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel5.setFont(new java.awt.Font("Yu Gothic UI", 0, 14)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(27, 55, 77));
         jLabel5.setText(" Users");
         jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -259,12 +259,12 @@ public class Admin_RegUsers_Add extends javax.swing.JFrame {
         jPanel5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(235, 235, 235)));
         jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        admin_name1.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
+        admin_name1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         admin_name1.setForeground(new java.awt.Color(27, 55, 77));
         admin_name1.setText("Admin name");
         jPanel5.add(admin_name1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, -1, 20));
 
-        admin_usn.setFont(new java.awt.Font("Yu Gothic UI", 0, 12)); // NOI18N
+        admin_usn.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         admin_usn.setForeground(new java.awt.Color(100, 115, 122));
         admin_usn.setText("username");
         jPanel5.add(admin_usn, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 20, 60, 30));
@@ -319,19 +319,9 @@ public class Admin_RegUsers_Add extends javax.swing.JFrame {
         jPanel1.add(adm_nav);
         adm_nav.setBounds(0, -10, 180, 450);
 
-        jPanel2.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
-        add.setBackground(new java.awt.Color(27, 55, 77));
-        add.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
-        add.setForeground(new java.awt.Color(255, 255, 255));
-        add.setText("Add");
-        add.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addActionPerformed(evt);
-            }
-        });
-
-        jPanel3.setBackground(new java.awt.Color(153, 153, 153));
+        jPanel3.setBackground(new java.awt.Color(204, 204, 204));
         jPanel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(235, 235, 235)));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -343,12 +333,11 @@ public class Admin_RegUsers_Add extends javax.swing.JFrame {
                 fnActionPerformed(evt);
             }
         });
-        jPanel3.add(fn, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 80, 120, 24));
+        jPanel3.add(fn, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 70, 120, 24));
 
-        jLabel4.setFont(new java.awt.Font("Yu Gothic UI", 1, 11)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel4.setText("First Name:");
-        jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 60, -1, -1));
+        jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 50, -1, -1));
 
         ln.setBackground(new java.awt.Color(245, 246, 248));
         ln.setFont(new java.awt.Font("Yu Gothic UI", 0, 10)); // NOI18N
@@ -358,12 +347,11 @@ public class Admin_RegUsers_Add extends javax.swing.JFrame {
                 lnActionPerformed(evt);
             }
         });
-        jPanel3.add(ln, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 80, 120, 24));
+        jPanel3.add(ln, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 70, 120, 24));
 
-        jLabel7.setFont(new java.awt.Font("Yu Gothic UI", 1, 11)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel7.setText("Last Name:");
-        jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 60, -1, 20));
+        jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 50, -1, 20));
 
         usn.setBackground(new java.awt.Color(245, 246, 248));
         usn.setFont(new java.awt.Font("Yu Gothic UI", 0, 10)); // NOI18N
@@ -373,17 +361,15 @@ public class Admin_RegUsers_Add extends javax.swing.JFrame {
                 usnActionPerformed(evt);
             }
         });
-        jPanel3.add(usn, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 120, 24));
+        jPanel3.add(usn, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 130, 120, 24));
 
-        jLabel8.setFont(new java.awt.Font("Yu Gothic UI", 1, 11)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel8.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel8.setText("Username:");
-        jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, -1, 20));
+        jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 110, -1, 20));
 
-        jLabel9.setFont(new java.awt.Font("Yu Gothic UI", 1, 11)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel9.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel9.setText("Password:");
-        jPanel3.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 120, -1, 20));
+        jPanel3.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 110, -1, 20));
 
         ps.setBackground(new java.awt.Color(245, 246, 248));
         ps.setFont(new java.awt.Font("Yu Gothic UI", 0, 10)); // NOI18N
@@ -393,7 +379,7 @@ public class Admin_RegUsers_Add extends javax.swing.JFrame {
                 psActionPerformed(evt);
             }
         });
-        jPanel3.add(ps, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 140, 120, 24));
+        jPanel3.add(ps, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 130, 120, 24));
 
         mail.setBackground(new java.awt.Color(245, 246, 248));
         mail.setFont(new java.awt.Font("Yu Gothic UI", 0, 10)); // NOI18N
@@ -403,12 +389,11 @@ public class Admin_RegUsers_Add extends javax.swing.JFrame {
                 mailActionPerformed(evt);
             }
         });
-        jPanel3.add(mail, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 200, 120, 24));
+        jPanel3.add(mail, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 190, 120, 24));
 
-        jLabel10.setFont(new java.awt.Font("Yu Gothic UI", 1, 11)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel10.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel10.setText("Email Address:");
-        jPanel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, -1, 20));
+        jPanel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 170, -1, 20));
 
         ut.setFont(new java.awt.Font("Yu Gothic UI", 0, 10)); // NOI18N
         ut.setForeground(new java.awt.Color(100, 115, 122));
@@ -418,12 +403,11 @@ public class Admin_RegUsers_Add extends javax.swing.JFrame {
                 utActionPerformed(evt);
             }
         });
-        jPanel3.add(ut, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 200, 120, 24));
+        jPanel3.add(ut, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 190, 120, 24));
 
-        jLabel11.setFont(new java.awt.Font("Yu Gothic UI", 1, 11)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel11.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel11.setText("User Type:");
-        jPanel3.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 180, -1, 20));
+        jPanel3.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 170, -1, 20));
 
         addBT.setBackground(new java.awt.Color(51, 255, 51));
         addBT.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
@@ -436,7 +420,7 @@ public class Admin_RegUsers_Add extends javax.swing.JFrame {
                 addBTActionPerformed(evt);
             }
         });
-        jPanel3.add(addBT, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 250, 30, 30));
+        jPanel3.add(addBT, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 260, 40, 30));
 
         st.setFont(new java.awt.Font("Yu Gothic UI", 0, 10)); // NOI18N
         st.setForeground(new java.awt.Color(100, 115, 122));
@@ -446,12 +430,11 @@ public class Admin_RegUsers_Add extends javax.swing.JFrame {
                 stActionPerformed(evt);
             }
         });
-        jPanel3.add(st, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 260, 120, 24));
+        jPanel3.add(st, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 250, 120, 24));
 
-        jLabel13.setFont(new java.awt.Font("Yu Gothic UI", 1, 11)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel13.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel13.setText("Account Status");
-        jPanel3.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, -1, 20));
+        jPanel3.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 230, -1, 20));
 
         uID.setBackground(new java.awt.Color(245, 246, 248));
         uID.setFont(new java.awt.Font("Yu Gothic UI", 0, 10)); // NOI18N
@@ -462,12 +445,11 @@ public class Admin_RegUsers_Add extends javax.swing.JFrame {
                 uIDActionPerformed(evt);
             }
         });
-        jPanel3.add(uID, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 20, 100, 24));
+        jPanel3.add(uID, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 20, 100, 24));
 
-        jLabel16.setFont(new java.awt.Font("Yu Gothic UI", 1, 11)); // NOI18N
-        jLabel16.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel16.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel16.setText("User ID:");
-        jPanel3.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 40, 20));
+        jPanel3.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 20, 50, 20));
 
         cancel.setBackground(new java.awt.Color(255, 0, 0));
         cancel.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
@@ -482,7 +464,7 @@ public class Admin_RegUsers_Add extends javax.swing.JFrame {
                 cancelActionPerformed(evt);
             }
         });
-        jPanel3.add(cancel, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 250, 30, 30));
+        jPanel3.add(cancel, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 260, -1, 30));
 
         update.setBackground(new java.awt.Color(27, 55, 77));
         update.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
@@ -498,7 +480,18 @@ public class Admin_RegUsers_Add extends javax.swing.JFrame {
                 updateActionPerformed(evt);
             }
         });
-        jPanel3.add(update, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 250, 30, 30));
+        jPanel3.add(update, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 260, -1, 30));
+
+        add.setBackground(new java.awt.Color(27, 55, 77));
+        add.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
+        add.setForeground(new java.awt.Color(255, 255, 255));
+        add.setText("Add");
+        add.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addActionPerformed(evt);
+            }
+        });
+        jPanel3.add(add, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 230, 96, -1));
 
         edit.setBackground(new java.awt.Color(27, 55, 77));
         edit.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
@@ -514,6 +507,7 @@ public class Admin_RegUsers_Add extends javax.swing.JFrame {
                 editActionPerformed(evt);
             }
         });
+        jPanel3.add(edit, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 230, 102, -1));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -521,23 +515,13 @@ public class Admin_RegUsers_Add extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 690, Short.MAX_VALUE)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(add, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(edit, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 700, Short.MAX_VALUE)
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(8, 8, 8)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(add)
-                    .addComponent(edit))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(43, 43, 43)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 305, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -560,9 +544,9 @@ public class Admin_RegUsers_Add extends javax.swing.JFrame {
         jPanel1.add(mainDk);
         mainDk.setBounds(180, 60, 720, 360);
 
-        adm_header.setBackground(new java.awt.Color(153, 153, 153));
+        adm_header.setBackground(new java.awt.Color(204, 204, 204));
 
-        jLabel1.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("REGISTERED USER SETTINGS");
 
@@ -571,9 +555,9 @@ public class Admin_RegUsers_Add extends javax.swing.JFrame {
         adm_headerLayout.setHorizontalGroup(
             adm_headerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(adm_headerLayout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(42, 42, 42)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 291, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(424, Short.MAX_VALUE))
+                .addContainerGap(397, Short.MAX_VALUE))
         );
         adm_headerLayout.setVerticalGroup(
             adm_headerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

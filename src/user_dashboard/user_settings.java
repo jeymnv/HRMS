@@ -123,7 +123,6 @@ public class user_settings extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         fn = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
@@ -139,6 +138,7 @@ public class user_settings extends javax.swing.JFrame {
         jLabel16 = new javax.swing.JLabel();
         cancel = new javax.swing.JButton();
         update = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         addWindowListener(new java.awt.event.WindowAdapter() {
@@ -147,15 +147,14 @@ public class user_settings extends javax.swing.JFrame {
             }
         });
 
-        jPanel1.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(null);
 
-        jPanel2.setBackground(new java.awt.Color(153, 153, 153));
+        jPanel2.setBackground(new java.awt.Color(204, 204, 204));
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.setForeground(new java.awt.Color(255, 255, 255));
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel3.setText("DASHBOARD");
         jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -163,8 +162,7 @@ public class user_settings extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel2.setText("Log out");
         jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -185,46 +183,40 @@ public class user_settings extends javax.swing.JFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(jLabel10)
+                .addContainerGap(128, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addComponent(jLabel10))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(49, 49, 49)
+                        .addGap(12, 12, 12)
                         .addComponent(jLabel2))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(37, 37, 37)
-                        .addComponent(jLabel3)))
-                .addContainerGap(43, Short.MAX_VALUE))
+                    .addComponent(jLabel3))
+                .addGap(27, 27, 27))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(52, 52, 52)
+                .addGap(18, 18, 18)
                 .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 211, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 205, Short.MAX_VALUE)
                 .addComponent(jLabel2)
-                .addGap(47, 47, 47))
+                .addGap(81, 81, 81))
         );
 
         jPanel1.add(jPanel2);
         jPanel2.setBounds(9, 10, 150, 430);
 
-        jPanel3.setBackground(new java.awt.Color(153, 153, 153));
+        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.darkGray, java.awt.Color.white, java.awt.Color.black, java.awt.Color.lightGray));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("USER");
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("DASHBOARD");
-
-        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("SETTINGS");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -235,30 +227,22 @@ public class user_settings extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel9)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 422, Short.MAX_VALUE)
-                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(56, 56, 56))
+                .addContainerGap(557, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGap(2, 2, 2))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(0, 12, Short.MAX_VALUE)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel9)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addGap(0, 12, Short.MAX_VALUE)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel9)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
         jPanel1.add(jPanel3);
         jPanel3.setBounds(165, 11, 800, 58);
 
-        jPanel4.setBackground(new java.awt.Color(153, 153, 153));
+        jPanel4.setBackground(new java.awt.Color(255, 255, 255));
         jPanel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(235, 235, 235)));
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -270,12 +254,11 @@ public class user_settings extends javax.swing.JFrame {
                 fnActionPerformed(evt);
             }
         });
-        jPanel4.add(fn, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 80, 120, 24));
+        jPanel4.add(fn, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 110, 120, 24));
 
-        jLabel5.setFont(new java.awt.Font("Yu Gothic UI", 1, 11)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel5.setText("First Name:");
-        jPanel4.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 60, -1, -1));
+        jPanel4.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 90, -1, -1));
 
         ln.setBackground(new java.awt.Color(245, 246, 248));
         ln.setFont(new java.awt.Font("Yu Gothic UI", 0, 10)); // NOI18N
@@ -285,12 +268,11 @@ public class user_settings extends javax.swing.JFrame {
                 lnActionPerformed(evt);
             }
         });
-        jPanel4.add(ln, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 80, 120, 24));
+        jPanel4.add(ln, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 110, 120, 24));
 
-        jLabel7.setFont(new java.awt.Font("Yu Gothic UI", 1, 11)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel7.setText("Last Name:");
-        jPanel4.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 60, -1, 20));
+        jPanel4.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 90, -1, 20));
 
         usn.setBackground(new java.awt.Color(245, 246, 248));
         usn.setFont(new java.awt.Font("Yu Gothic UI", 0, 10)); // NOI18N
@@ -300,17 +282,15 @@ public class user_settings extends javax.swing.JFrame {
                 usnActionPerformed(evt);
             }
         });
-        jPanel4.add(usn, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 120, 24));
+        jPanel4.add(usn, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 180, 120, 24));
 
-        jLabel8.setFont(new java.awt.Font("Yu Gothic UI", 1, 11)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel8.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel8.setText("Username:");
-        jPanel4.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, -1, 20));
+        jPanel4.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 160, -1, 20));
 
-        jLabel11.setFont(new java.awt.Font("Yu Gothic UI", 1, 11)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel11.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel11.setText("Password:");
-        jPanel4.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 120, -1, 20));
+        jPanel4.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 170, -1, 20));
 
         ps.setBackground(new java.awt.Color(245, 246, 248));
         ps.setFont(new java.awt.Font("Yu Gothic UI", 0, 10)); // NOI18N
@@ -320,7 +300,7 @@ public class user_settings extends javax.swing.JFrame {
                 psActionPerformed(evt);
             }
         });
-        jPanel4.add(ps, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 140, 120, 24));
+        jPanel4.add(ps, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 190, 120, 24));
 
         mail.setBackground(new java.awt.Color(245, 246, 248));
         mail.setFont(new java.awt.Font("Yu Gothic UI", 0, 10)); // NOI18N
@@ -330,12 +310,11 @@ public class user_settings extends javax.swing.JFrame {
                 mailActionPerformed(evt);
             }
         });
-        jPanel4.add(mail, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 200, 120, 24));
+        jPanel4.add(mail, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 260, 120, 24));
 
-        jLabel12.setFont(new java.awt.Font("Yu Gothic UI", 1, 11)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel12.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel12.setText("Email Address:");
-        jPanel4.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, -1, 20));
+        jPanel4.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 240, -1, 20));
 
         uID.setBackground(new java.awt.Color(245, 246, 248));
         uID.setFont(new java.awt.Font("Yu Gothic UI", 0, 10)); // NOI18N
@@ -346,12 +325,11 @@ public class user_settings extends javax.swing.JFrame {
                 uIDActionPerformed(evt);
             }
         });
-        jPanel4.add(uID, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 20, 100, 24));
+        jPanel4.add(uID, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 40, 100, 24));
 
-        jLabel16.setFont(new java.awt.Font("Yu Gothic UI", 1, 11)); // NOI18N
-        jLabel16.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel16.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel16.setText("User ID:");
-        jPanel4.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 40, 20));
+        jPanel4.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 40, 50, 20));
 
         cancel.setBackground(new java.awt.Color(255, 0, 0));
         cancel.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
@@ -366,7 +344,7 @@ public class user_settings extends javax.swing.JFrame {
                 cancelActionPerformed(evt);
             }
         });
-        jPanel4.add(cancel, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 200, 30, 30));
+        jPanel4.add(cancel, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 270, 80, 30));
 
         update.setBackground(new java.awt.Color(27, 55, 77));
         update.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
@@ -381,7 +359,11 @@ public class user_settings extends javax.swing.JFrame {
                 updateActionPerformed(evt);
             }
         });
-        jPanel4.add(update, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 200, 30, 30));
+        jPanel4.add(update, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 270, 80, 30));
+
+        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel4.setText("SETTINGS");
+        jPanel4.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 10, 79, 28));
 
         jPanel1.add(jPanel4);
         jPanel4.setBounds(170, 80, 790, 360);
@@ -566,8 +548,8 @@ public class user_settings extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton cancel;
-    private javax.swing.JTextField fn;
+    public javax.swing.JButton cancel;
+    public javax.swing.JTextField fn;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -584,11 +566,11 @@ public class user_settings extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
-    private javax.swing.JTextField ln;
-    private javax.swing.JTextField mail;
-    private javax.swing.JTextField ps;
-    private javax.swing.JTextField uID;
-    private javax.swing.JButton update;
-    private javax.swing.JTextField usn;
+    public javax.swing.JTextField ln;
+    public javax.swing.JTextField mail;
+    public javax.swing.JTextField ps;
+    public javax.swing.JTextField uID;
+    public javax.swing.JButton update;
+    public javax.swing.JTextField usn;
     // End of variables declaration//GEN-END:variables
 }
